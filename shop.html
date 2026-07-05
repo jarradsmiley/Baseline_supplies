@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Buy By The Bag — Baseline_Supplies</title>
+<meta name="description" content="Buy raw creatine monohydrate once, in whatever quantity you need. Real bulk pricing at 3 bags and 6 bags. No subscription required.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,900&family=Instrument+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css?v=2">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a href="index.html" class="brand" aria-label="Baseline Supplies, home">
+      <img src="assets/logo.png" alt="Baseline Supplies" class="brand__logo">
+    </a>
+    <nav class="site-nav" id="siteNav">
+      <ul class="site-nav__links">
+        <li><a href="index.html#facts">The Powder</a></li>
+        <li><a href="index.html#math">The Math</a></li>
+        <li><a href="subscribe.html">Subscribe</a></li>
+        <li><a href="shop.html">Buy By The Bag</a></li>
+      </ul>
+      <a href="subscribe.html" class="btn btn--outline-ink site-nav__cta">Subscribe instead →</a>
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="siteNav" aria-label="Toggle menu">
+        <span class="nav-toggle__bar"></span>
+      </button>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="subhero">
+    <div class="wrap">
+      <a href="index.html" class="subhero__back">← Baseline_</a>
+      <span class="eyebrow">Stream 02 — One-time</span>
+      <h1>Buy once. Buy in bulk. No commitment.</h1>
+      <p class="subhero__sub">
+        One-time orders with real bulk pricing — the more you buy, the less
+        it costs per gram. No subscription, no account required.
+      </p>
+    </div>
+  </section>
+
+  <section class="calc">
+    <div class="wrap">
+      <div class="calc__card">
+        <div class="calc__controls">
+          <span class="calc__label">Bags (500g each)</span>
+          <div class="stepper">
+            <button class="stepper__btn" id="shopDown" aria-label="Decrease quantity">−</button>
+            <span class="stepper__value" id="shopQty">1</span>
+            <button class="stepper__btn" id="shopUp" aria-label="Increase quantity">+</button>
+          </div>
+
+          <div class="tier-select" role="group" aria-label="Quick select quantity">
+            <button class="tier-btn" data-qty="1" aria-pressed="true">1 bag</button>
+            <button class="tier-btn" data-qty="3" aria-pressed="false">3 bags</button>
+            <button class="tier-btn" data-qty="6" aria-pressed="false">6 bags</button>
+          </div>
+
+          <p class="tier-note">
+            <strong>1–2 bags:</strong> $28.00 / bag &nbsp;·&nbsp;
+            <strong>3–5 bags:</strong> $25.00 / bag &nbsp;·&nbsp;
+            <strong>6+ bags:</strong> $23.00 / bag.
+            Tier applies automatically as you change quantity.
+          </p>
+        </div>
+
+        <div class="calc__output">
+          <span class="calc__total-label">Order total</span>
+          <div class="calc__total">$<span id="shopTotal">28.00</span></div>
+
+          <div class="calc__breakdown">
+            <div class="calc__breakdown-row"><span>Price per bag</span><strong id="shopUnit">$28.00</strong></div>
+            <div class="calc__breakdown-row"><span>Cost per serving (5g)</span><strong id="shopServing">$0.28</strong></div>
+            <div class="calc__breakdown-row"><span>Cost per gram</span><strong id="shopGram">$0.056</strong></div>
+            <div class="calc__breakdown-row"><span>Shipping</span><strong>Included</strong></div>
+          </div>
+
+          <p class="calc__savings" id="shopSavingsWrap" style="visibility:hidden;">You save $<span id="shopSavings">0.00</span> vs. buying single bags.</p>
+
+          <button class="btn btn--solid calc__cta" id="shopCta">Buy <span id="shopCtaQty">1</span> bag — $<span id="shopCtaPrice">28.00</span></button>
+          <div class="calc__confirm" id="shopConfirm">
+            ✓ Order set: <span id="shopConfirmQty">1</span> bag(s) for $<span id="shopConfirmPrice">28.00</span>. In a live store, this would continue to checkout.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="good-to-know">
+    <div class="wrap">
+      <h2>Good to know</h2>
+      <ul class="good-to-know__list">
+        <li><strong>Free shipping</strong>Included in every price shown — no surprise at checkout.</li>
+        <li><strong>No account needed</strong>Order as a guest; create an account only if you want order history.</li>
+        <li><strong>Tiers stack automatically</strong>Add a bag and the per-bag price updates in real time above.</li>
+      </ul>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer__top">
+      <div class="footer__brand">
+        <a href="index.html" class="brand">BASELINE<span class="brand__accent">_</span></a>
+        <p class="footer__tagline">Sports nutrition priced like an ingredient, not a brand.</p>
+      </div>
+      <div class="footer__col">
+        <h4>Product</h4>
+        <ul>
+          <li><a href="index.html#facts">The Powder</a></li>
+          <li><a href="index.html#math">The Math</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4>Buy</h4>
+        <ul>
+          <li><a href="subscribe.html">Subscribe &amp; Save</a></li>
+          <li><a href="shop.html">Buy By The Bag</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="mailto:hello@baselinesupplies.co">hello@baselinesupplies.co</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>© 2026 Baseline Supplies. Creatine monohydrate — that's it.</span>
+      <span>This is a concept site built for design purposes.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js?v=2"></script>
+</body>
+</html>
