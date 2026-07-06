@@ -256,6 +256,63 @@ p { margin: 0; }
   color: var(--graphite);
 }
 
+/* ---- Hero stream choice ---- */
+
+.hero__choice {
+  margin-top: 2.25rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.85rem;
+  max-width: 560px;
+}
+
+@media (min-width: 560px) {
+  .hero__choice { grid-template-columns: 1fr 1fr; }
+}
+
+.choice-btn {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  padding: 1.15rem 1.35rem;
+  text-decoration: none;
+  border-radius: 2px;
+  border: 1.5px solid var(--ink);
+  transition: transform 0.15s var(--ease), background 0.15s var(--ease), color 0.15s var(--ease);
+}
+.choice-btn:active { transform: translateY(1px); }
+
+.choice-btn__label {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 1.35rem;
+  line-height: 1.1;
+}
+
+.choice-btn__meta {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.choice-btn--solid {
+  background: var(--ink);
+  color: var(--paper);
+  border-color: var(--ink);
+}
+.choice-btn--solid .choice-btn__meta { color: var(--signal); }
+.choice-btn--solid:hover { background: var(--signal); border-color: var(--signal); color: var(--ink); }
+.choice-btn--solid:hover .choice-btn__meta { color: var(--ink); }
+
+.choice-btn--outline {
+  background: transparent;
+  color: var(--ink);
+}
+.choice-btn--outline .choice-btn__meta { color: var(--graphite); }
+.choice-btn--outline:hover { background: var(--ink); color: var(--paper); }
+.choice-btn--outline:hover .choice-btn__meta { color: var(--signal); }
+
 .hero__scroll {
   margin-top: 2.25rem;
   display: inline-flex;

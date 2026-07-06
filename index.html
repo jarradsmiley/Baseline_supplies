@@ -8,7 +8,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,900&family=Instrument+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css?v=2">
+<link rel="stylesheet" href="styles.css?v=3">
 </head>
 <body>
 
@@ -45,7 +45,16 @@
           cost per gram so you can check our math yourself — then choose how you
           want to buy it.
         </p>
-        <a href="#facts" class="hero__scroll">See the label ↓</a>
+        <div class="hero__choice" role="group" aria-label="Choose how to buy">
+          <a href="subscribe.html" class="choice-btn choice-btn--solid">
+            <span class="choice-btn__label">Subscribe &amp; Save</span>
+            <span class="choice-btn__meta">$23.80 / bag · monthly · cancel anytime</span>
+          </a>
+          <a href="shop.html" class="choice-btn choice-btn--outline">
+            <span class="choice-btn__label">Buy By The Bag</span>
+            <span class="choice-btn__meta">from $23.00 / bag · one-time · bulk tiers</span>
+          </a>
+        </div>
       </div>
 
       <div class="hero__facts" id="facts">
@@ -78,41 +87,12 @@
     </div>
   </section>
 
-  <!-- LEDGER / THE MATH -->
-  <section class="ledger" id="math">
-    <div class="wrap">
-      <span class="eyebrow eyebrow--on-dark">The Math</span>
-      <h2>Here's exactly what you're paying for, per gram.</h2>
-
-      <div class="ledger__grid">
-        <div class="ledger__item">
-          <div class="ledger__figure">$0.056</div>
-          <div class="ledger__label">per gram, at single-bag price. Drops as you buy more.</div>
-        </div>
-        <div class="ledger__item">
-          <div class="ledger__figure">$0.28</div>
-          <div class="ledger__label">per 5g scoop — 100 scoops in every 500g bag.</div>
-        </div>
-        <div class="ledger__item">
-          <div class="ledger__figure">1</div>
-          <div class="ledger__label">ingredient. Creatine monohydrate, full stop.</div>
-        </div>
-      </div>
-
-      <p class="ledger__note">
-        <strong>No proprietary blend. No "natural and artificial flavors" asterisk.</strong>
-        Shipping is included in every price you see on this site — the number at
-        checkout is the number you pay.
-      </p>
-    </div>
-  </section>
-
   <!-- TWO-PATH SPLIT -->
   <section class="paths" id="choose">
     <div class="wrap">
       <div class="paths__head">
         <span class="eyebrow">Choose your lane</span>
-        <h2>However you train, buy it your way.</h2>
+        <h2>Two ways to buy. Same powder, same math.</h2>
       </div>
 
       <div class="paths__grid">
@@ -142,6 +122,35 @@
           <span class="path-card__cta">Shop quantities <span class="path-card__arrow">→</span></span>
         </a>
       </div>
+    </div>
+  </section>
+
+  <!-- LEDGER / THE MATH -->
+  <section class="ledger" id="math">
+    <div class="wrap">
+      <span class="eyebrow eyebrow--on-dark">The Math</span>
+      <h2>Here's exactly what you're paying for, per gram.</h2>
+
+      <div class="ledger__grid">
+        <div class="ledger__item">
+          <div class="ledger__figure">$0.056</div>
+          <div class="ledger__label">per gram, at single-bag price. Drops as you buy more.</div>
+        </div>
+        <div class="ledger__item">
+          <div class="ledger__figure">$0.28</div>
+          <div class="ledger__label">per 5g scoop — 100 scoops in every 500g bag.</div>
+        </div>
+        <div class="ledger__item">
+          <div class="ledger__figure">1</div>
+          <div class="ledger__label">ingredient. Creatine monohydrate, full stop.</div>
+        </div>
+      </div>
+
+      <p class="ledger__note">
+        <strong>No proprietary blend. No "natural and artificial flavors" asterisk.</strong>
+        Shipping is included in every price you see on this site — the number at
+        checkout is the number you pay.
+      </p>
     </div>
   </section>
 
@@ -194,6 +203,6 @@
   </div>
 </footer>
 
-<script src="script.js?v=2"></script>
+<script src="script.js?v=3"></script>
 </body>
 </html>
